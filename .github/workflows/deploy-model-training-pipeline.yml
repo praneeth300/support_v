@@ -27,6 +27,7 @@ jobs:
         workspace_name: ${{ needs.get-config.outputs.aml_workspace }}     
       secrets:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
+        enable-AzPSSession: true
         # creds: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
         # creds: ${{ secrets.AZURE_TENANT_ID }}
         # creds: ${{ secrets.AZURE_CLIENT_ID }}
